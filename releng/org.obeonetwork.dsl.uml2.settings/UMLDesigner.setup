@@ -179,6 +179,12 @@
         name="org.eclipse.amalgam.discovery.feature.group"/>
     <requirement
         name="org.hamcrest.library"/>
+    <requirement
+        name="org.eclipse.amalgam.explorer.contextual.core.feature.group"/>
+    <requirement
+        name="org.eclipse.amalgam.explorer.contextual.feature.group"/>
+    <requirement
+        name="org.eclipse.amalgam.explorer.contextual.sirius.feature.group"/>
     <repository
         url="http://mbarbero.github.io/fr.obeo.releng.targetplatform/p2/"/>
     <repository
@@ -191,6 +197,8 @@
         url="http://download.eclipse.org/acceleo/updates/releases/3.6"/>
     <repository
         url="http://download.eclipse.org/tools/orbit/downloads/drops/R20150519210750/repository/"/>
+    <repository
+        url="http://download.eclipse.org/modeling/amalgam/updates/nightly/1.7.x/mars/"/>
     <description>Install the tools needed in the IDE to work with the source code for ${scope.project.label}</description>
   </setupTask>
   <setupTask
@@ -276,6 +284,9 @@
         <operand
             xsi:type="predicates:NamePredicate"
             pattern="org.obeonetwork.gmf.runtime.diagram.ui.extension"/>
+        <operand
+            xsi:type="predicates:NamePredicate"
+            pattern="org.obeonetwork.dsl.uml2.contextual"/>
       </predicate>
     </workingSet>
     <workingSet

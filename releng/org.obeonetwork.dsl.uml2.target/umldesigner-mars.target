@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?pde?>
 <!-- generated with https://github.com/mbarbero/fr.obeo.releng.targetplatform -->
-<target name="UML Designer Mars" sequenceNumber="1455284088">
+<target name="UML Designer Mars" sequenceNumber="1455284089">
   <locations>
     <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
       <unit id="com.google.guava" version="15.0.0.v201403281430"/>
@@ -28,7 +28,6 @@
       <unit id="org.eclipse.platform.sdk" version="0.0.0"/>
       <unit id="org.eclipse.equinox.executable.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.epp.mpc.feature.group" version="0.0.0"/>
-      <unit id="org.eclipse.amalgam.discovery.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.edit.feature.group" version="2.11.1.v20150806-0404"/>
       <unit id="org.eclipse.emf.mapping.ecore.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.importer.ecore" version="0.0.0"/>
@@ -54,6 +53,13 @@
       <unit id="org.eclipse.emf.compare.feature.group" version="0.0.0"/>
       <unit id="org.eclipse.emf.compare.uml2.feature.group" version="0.0.0"/>
       <repository location="http://download.eclipse.org/modeling/emf/compare/updates/releases/3.0"/>
+    </location>
+    <location includeMode="planner" includeAllPlatforms="false" includeSource="true" includeConfigurePhase="false" type="InstallableUnit">
+      <unit id="org.eclipse.amalgam.discovery.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.amalgam.explorer.contextual.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.amalgam.explorer.contextual.core.feature.group" version="0.0.0"/>
+      <unit id="org.eclipse.amalgam.explorer.contextual.sirius.feature.group" version="0.0.0"/>
+      <repository location="http://download.eclipse.org/modeling/amalgam/updates/nightly/1.7.x/mars/"/>
     </location>
   </locations>
 </target>

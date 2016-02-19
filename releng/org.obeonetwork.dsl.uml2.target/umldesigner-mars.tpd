@@ -7,7 +7,6 @@ location "http://download.eclipse.org/releases/mars/" {
 	org.eclipse.platform.sdk lazy
 	org.eclipse.equinox.executable.feature.group lazy
 	org.eclipse.epp.mpc.feature.group lazy
-	org.eclipse.amalgam.discovery.feature.group lazy
 	org.eclipse.emf.edit.feature.group[2.11.0,2.12.0)
 	org.eclipse.emf.mapping.ecore.feature.group lazy
 	org.eclipse.emf.importer.ecore lazy
@@ -70,4 +69,12 @@ location "http://download.eclipse.org/modeling/emf/compare/updates/releases/3.0"
 	org.eclipse.emf.compare.rcp.ui.feature.group lazy
 	org.eclipse.emf.compare.feature.group lazy
 	org.eclipse.emf.compare.uml2.feature.group lazy
+}
+
+// Amalgam Contextual
+location "http://download.eclipse.org/modeling/amalgam/updates/nightly/1.7.x/mars/" {
+	org.eclipse.amalgam.discovery.feature.group lazy
+	org.eclipse.amalgam.explorer.contextual.feature.group lazy
+	org.eclipse.amalgam.explorer.contextual.core.feature.group lazy	
+	org.eclipse.amalgam.explorer.contextual.sirius.feature.group lazy	
 }
