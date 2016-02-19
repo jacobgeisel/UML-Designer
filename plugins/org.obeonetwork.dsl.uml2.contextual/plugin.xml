@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+   <extension
+         point="org.eclipse.amalgam.explorer.contextual.ui.FocusInEditor">
+      <focusManager
+            class="org.obeonetwork.dsl.uml2.contextual.ui.FocusInEcoreEditor">
+      </focusManager>
+      <focusManager
+            class="org.obeonetwork.dsl.uml2.contextual.ui.FocusInUMLDiagramEditor">
+      </focusManager>
+   </extension>
+   <extension
+         point="org.eclipse.amalgam.explorer.contextual.core.contentProviderCategory">
+      <category
+            id="UML_SuperClasses"
+            isTopLevel="true"
+            name="Super Classes">
+         <availableForType
+               class="org.eclipse.uml2.uml.Class">
+         </availableForType>
+         <targetExplorerId
+               id="CurrentElementExplorer">
+         </targetExplorerId>
+         <categoryQuery>
+            <basicQuery
+                  class="org.obeonetwork.dsl.uml2.contextual.query.UMLClassSuperclassesQuery">
+            </basicQuery>
+         </categoryQuery>
+      </category>
+      <category
+            id="UML_ImplementedInterfaces"
+            isTopLevel="false"
+            name="Implemented Interfaces">
+         <availableForType
+               class="org.eclipse.uml2.uml.Class">
+         </availableForType>
+         <targetExplorerId
+               id="CurrentElementExplorer">
+         </targetExplorerId>
+         <categoryQuery>
+            <basicQuery
+                  class="org.obeonetwork.dsl.uml2.contextual.query.UMLClassAllImplementedInterfacesQuery">
+            </basicQuery>
+         </categoryQuery>
+      </category>
+      <category
+            id="UML_PackagePackagedElementsQuery"
+            isTopLevel="true"
+            name="Packaged Elements">
+         <availableForType
+               class="org.eclipse.uml2.uml.Package">
+         </availableForType>
+         <targetExplorerId
+               id="CurrentElementExplorer">
+         </targetExplorerId>
+         <categoryQuery>
+            <basicQuery
+                  class="org.obeonetwork.dsl.uml2.contextual.query.UMLPackagePackagedElementsQuery">
+            </basicQuery>
+         </categoryQuery>
+      </category>
+      <category
+            id="UML_InverseReferences"
+            isTopLevel="true"
+            name="Inverse References">
+         <availableForType
+               class="org.eclipse.emf.ecore.EObject">
+         </availableForType>
+         <targetExplorerId
+               id="ReferencingElementExplorer">
+         </targetExplorerId>
+         <categoryQuery>
+            <basicQuery
+                  class="org.obeonetwork.dsl.uml2.contextual.query.UMLElementInverseReferences">
+            </basicQuery>
+         </categoryQuery>
+      </category>
+   </extension>
+
+</plugin>
